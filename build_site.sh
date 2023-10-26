@@ -12,7 +12,7 @@ if [ -z "$outdir" ]; then
 fi
 
 rm -rf "$outdir"
-mkdir "$outdir"
+mkdir -p "$outdir"
 
 buildPlugin() 
 {
