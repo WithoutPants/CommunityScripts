@@ -23,16 +23,16 @@ jobs:
         path: main
         ref: main
     - run: |
-      cd main
-      ./build_site.sh ../_site/main
+        cd main
+        ./build_site.sh ../_site/main
     - name: Checkout Stable
       uses: actions/checkout@v2
       with:
         path: stable
         ref: stable
     - run: |
-      cd stable
-      ./build_site.sh ../_site/stable
+        cd stable
+        ./build_site.sh ../_site/stable
     - uses: actions/upload-pages-artifact@v1
     
   deploy:
